@@ -23,12 +23,11 @@ body{
 .subject-container{
     display:inline-block;
     text-align: left;
-    /* margin: 2px; */
     padding: 0 10px 0 10px;
-    /* border: 2px solid green; */
     border-radius: 9px;
     background-color: #ad88be;
-    /* width: 70vw; */
+    width: 320px;
+
 }
 .topics-container{
     /* border: 2px solid rgb(154, 60, 60); */
@@ -81,13 +80,18 @@ a{
  
 footer{
     background-color: black;
+    color: wheat;
 }
 .footer-para{
     /* background-color: black;
     margin: 0;
     padding: 0; */
     color: rgb(221, 215, 215);
-    font-size: 10px;
-    font-weight: 600;
+    font-size: 8px;
+    font-weight: 500;
     font-family: "Poppins", sans-serif;
+}
+
+.hr-top{
+    margin: 0;
 }
