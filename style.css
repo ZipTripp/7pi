@@ -8,10 +8,11 @@ body{
     /* min-height: 100vh; */
     /* margin: 0; */
     text-align: center;
+    margin: 0;
 }
 h1{
     position: relative;
-    top: 12px;
+    top: 18px;
 }
 /* .inter .box .topic p{
     font-family: "Inter", sans-serif;
@@ -87,6 +88,10 @@ footer{
     background-color: black;
     color: wheat;
     position: relative;
+    z-index: 1000;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
 
 }
 .footer-para{
