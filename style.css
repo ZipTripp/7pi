@@ -192,6 +192,7 @@ button:hover {
   border-radius: 12px;
   font-weight: bold;
   animation: blink 1s infinite;
+  height: 15px;
 }
 
 @keyframes blink {
