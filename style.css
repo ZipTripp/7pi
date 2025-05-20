@@ -30,11 +30,14 @@ h1{
 .subject-container{
     display:inline-block;
     text-align: left;
-    padding: 0 10px 0 10px;
+    padding: 0 5px 0 5px;
     border-radius: 9px;
     background-color: #ad88be;
-    width: 320px;
-    /* margin: 8px; */
+    width: 370px;
+    margin-bottom: 20px;
+
+    /* margin: 0; */
+
 
 }
 .subject-container h3{
@@ -42,6 +45,7 @@ h1{
 }
 .subject-container p{
     margin-top: 2px;
+    /* font-size: 12px; */
 }
 .topics-container{
     /* border: 2px solid rgb(154, 60, 60); */
@@ -63,8 +67,9 @@ h1{
   font-weight: 400;
   font-style: bold; */
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 450;
   font-style: normal;
+  font-size: 16px;
 
 }
 .topic span{
