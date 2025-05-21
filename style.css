@@ -161,6 +161,7 @@ footer>p{
 }
 .scroll-text{
     display: inline-block;
+    color: rgb(204, 4, 4);
     padding-left:100%;
     animation: scroll-left 20s linear infinite;
 }
@@ -182,6 +183,7 @@ button {
   border-radius: 5px;
   display: inline-block;
   font-weight: bold;
+  height: 1.7rem;
 }
 button:hover {
   background-color: #45a049;
