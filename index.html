@@ -37,6 +37,32 @@
 
 <body>
     <h1>D.EL.ED Preparation 2025</h1>
+
+            <table id="updates-table" border="1" style="width: 100%;">
+  <tr><th>Update time</th><th>Description</th></tr>
+</table>
+
+<script>
+fetch('updates.json')
+  .then(response => response.json())
+  .then(data => {
+    const table = document.getElementById('updates-table');
+    data.forEach(update => {
+      table.innerHTML += `<tr><td>${update.date}</td><td>${update.description}</td></tr>`;
+    });
+  })
+  .catch(err => console.error("Could not load updates:", err));
+</script>
+
+
+
+
+
+
+
+
+
+
     <div class="announcement-bar">
         <div class="scroll-text">
             Note: Full syllabus test will be Available from 24-05-25 12:00AM to 25-05-25 11:59PM.
@@ -239,9 +265,18 @@
                     </div>
                     <hr>
 <div class="topic">
-                        <p>15. GK & GS संपूर्ण Revision by Amitsir <span class="new-badge">New</span></p>
+                        <p>15. GK & GS संपूर्ण Revision by Amitsir</p>
                         <div class="topic-links">
                             <a href="https://drive.google.com/file/d/1yrtuFQ-fKoLprSD8duMDYkadcdKGR-Qf/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
+                            <a  target="_blank" rel="noopener noreferrer">---</a>
+                            <a  target="_blank" rel="noopener noreferrer">---</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="topic" >
+                        <p>16. भारत की प्रमुख नदियाँ <span class="new-badge">New</span></p>
+                        <div class="topic-links">
+                            <a href="https://drive.google.com/file/d/1ym3WzpxMu4TtRMH26JeZYCai_WXqXff5/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
                             <a  target="_blank" rel="noopener noreferrer">---</a>
                             <a  target="_blank" rel="noopener noreferrer">---</a>
                         </div>
@@ -251,8 +286,8 @@
                         <p>Topic name</p>
                         <div class="topic-links">
                             <a href="" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
-                            <a  target="_blank" rel="noopener noreferrer">---</a>
-                            <a  target="_blank" rel="noopener noreferrer">---</a>
+                            <a  target="_blank" rel="noopener noreferrer">Quiz</a>
+                            <a target="_blank" rel="noopener noreferrer">Play</a>
                         </div>
                     </div>
                 </div>
@@ -308,7 +343,17 @@
                     </div>
                     <hr>
                     <div class="topic">
-                        <p>4. Math Mock Test _ Previous year c1 <span class="new-badge">New</span></p>
+                        <p>4. Math Mock Test_Previous year c1 </p>
+                        <div class="topic-links">
+                            <a href="https://drive.google.com/file/d/1uVHh8qGMrnU3glVtX2gJlAdW6kuO4LI8/view?usp=drive_link"
+                                target="_blank" rel="noopener noreferrer">Notes/Questions</a>
+                            <a   rel="noopener noreferrer">---</a>
+                            <a target="_blank" rel="noopener noreferrer">---</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="topic">
+                        <p>5. Math class 2025_thahrav 2.0 day #18 <span class="new-badge">New</span></p>
                         <div class="topic-links">
                             <a href="https://drive.google.com/file/d/1uVHh8qGMrnU3glVtX2gJlAdW6kuO4LI8/view?usp=drive_link"
                                 target="_blank" rel="noopener noreferrer">Notes/Questions</a>
@@ -318,15 +363,13 @@
                     </div>
                     <hr>
                     <div class="topic" style="display: none;">
-                        <p>Topic</p>
+                        <p>Topic name</p>
                         <div class="topic-links">
-                            <a href="https://drive.google.com/file/d/1uVHh8qGMrnU3glVtX2gJlAdW6kuO4LI8/view?usp=drive_link"
-                                target="_blank" rel="noopener noreferrer">Notes/Questions</a>
-                            <a   rel="noopener noreferrer">---</a>
-                            <a target="_blank" rel="noopener noreferrer">---</a>
+                            <a href="" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
+                            <a  target="_blank" rel="noopener noreferrer">Quiz</a>
+                            <a target="_blank" rel="noopener noreferrer">Play</a>
                         </div>
                     </div>
-                    <hr>
                 </div>
             </div>
 
@@ -382,7 +425,7 @@
                     </div>
                     <hr>
                     <div class="topic" >
-                        <p>5. Hindi Practice Set 27_ Pavan Sir <span class="new-badge">New</span></p>
+                        <p>5. Hindi Practice Set 27_ Pavan Sir </p>
                         <div class="topic-links">
                             <a href="https://drive.google.com/file/d/1c-TLQki8aS6y5YC5FiyN3CjxciMl1Ppo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
                             <a  target="_blank" rel="noopener noreferrer">---</a>
@@ -390,7 +433,23 @@
                         </div>
                     </div>
                     <hr>
-                    
+                    <div class="topic">
+                        <p>6. Hindi Practice Set 28_ Pavan Sir <span class="new-badge">New</span></p>
+                        <div class="topic-links">
+                            <a href="https://drive.google.com/file/d/18WnRw8Se93YyvD4Y7O8A8mKR3LHiFWiE/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
+                            <a  target="_blank" rel="noopener noreferrer">Quiz</a>
+                            <a target="_blank" rel="noopener noreferrer">Play</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="topic" style="display: none;">
+                        <p>Topic name</p>
+                        <div class="topic-links">
+                            <a href="" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
+                            <a  target="_blank" rel="noopener noreferrer">Quiz</a>
+                            <a target="_blank" rel="noopener noreferrer">Play</a>
+                        </div>
+                    </div>
                     <hr>
                 </div>
             </div>
@@ -510,7 +569,7 @@
                     </div>
                     <hr>
                     <div class="topic">
-                        <p>6. Science+English Day 8 _ Most Vvi <span class="new-badge">New</span></p>
+                        <p>6. Science+English Day 8 _ Most Vvi </p>
                         <div class="topic-links">
                             <a href="https://drive.google.com/file/d/18MqcTa95Uz6tE1rA8G-d8x3Ks-k6VgIH/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
                             <a  target="_blank" rel="noopener noreferrer">---</a>
@@ -518,10 +577,10 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="topic" style="display: none;">
-                        <p>Topic name</p>
+                    <div class="topic">
+                        <p>7. Science+English Objectives Day 16_Abadat Sir <span class="new-badge">New</span></p>
                         <div class="topic-links">
-                            <a href="" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
+                            <a href="https://drive.google.com/file/d/1vXZogUcl_KQELp7_LfG7ihkxknyet0aD/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
                             <a  target="_blank" rel="noopener noreferrer">Quiz</a>
                             <a target="_blank" rel="noopener noreferrer">Play</a>
                         </div>
@@ -535,7 +594,16 @@
                             <a target="_blank" rel="noopener noreferrer">Play</a>
                         </div>
                     </div>
-                    <hr>                    
+                    <hr>   
+                    <div class="topic" style="display: none;">
+                        <p>Topic name</p>
+                        <div class="topic-links">
+                            <a href="" target="_blank" rel="noopener noreferrer">Notes/All questions</a>
+                            <a  target="_blank" rel="noopener noreferrer">Quiz</a>
+                            <a target="_blank" rel="noopener noreferrer">Play</a>
+                        </div>
+                    </div>
+                    <hr>                 
                 </div>
             </div>
 
@@ -554,7 +622,14 @@
             </p>
         </div>
         <p>&copy; 2025 Nirwair. All rights reserved.</p>
+
+        <hr>
+
+
+
+        <hr>
     </footer>
+    
 </body>
 
 </html>
