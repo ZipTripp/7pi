@@ -1,0 +1,30 @@
+
+name: Update Log Generator
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-update-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate updates.json from recent commits
+        run: |
+          git log -n 5 --pretty=format:'{"date": "%ad", "description": "%s"},' --date=short > updates_raw.txt
+          echo "[" > updates.json
+          cat updates_raw.txt | sed '$ s/,$//' >> updates.json
+          echo "]" >> updates.json
+
+      - name: Commit and push updates.json
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add updates.json
+          git commit -m "Auto-update updates.json"
+          git push
+        continue-on-error: true
