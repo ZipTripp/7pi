@@ -52,7 +52,7 @@ fetch('updates.json')
     const table = document.getElementById('updates-table');
     data.forEach(update => {
         const timeString = new Date(update.time * 1000).toLocaleTimeString();
-      table.innerHTML += `<tr><td>${update.date} ${timeString}</td><td>${update.description}</td></tr>`;
+      table.innerHTML += `<tr><td>${update.date}</td><td>${update.description}</td></tr>`;
     });
   })
   .catch(err => console.error("Could not load updates:", err));
