@@ -29,3 +29,4 @@ jobs:
           git add updates.json
           git commit -m "Auto-update updates.json" || echo "No changes to commit"
           git push
+
