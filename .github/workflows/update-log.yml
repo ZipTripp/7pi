@@ -1,10 +1,12 @@
-
 name: Update Log Generator
 
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write  # REQUIRED to allow push
 
 jobs:
   generate-update-log:
@@ -25,6 +27,5 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add updates.json
-          git commit -m "Auto-update updates.json"
+          git commit -m "Auto-update updates.json" || echo "No changes to commit"
           git push
-        continue-on-error: true
