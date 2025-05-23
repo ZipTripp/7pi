@@ -17,7 +17,7 @@ jobs:
 
       - name: Generate updates.json from recent commits
         run: |
-          git log -n 5 --pretty=format:'{"date": "%ad", "description": "%s"},' --date=short > updates_raw.txt
+          git log -n 5 --pretty=format:'{"date": "%ad", "time": "%at", "description": "%s"},' --date=iso > updates_raw.txt
           echo "[" > updates.json
           cat updates_raw.txt | sed '$ s/,$//' >> updates.json
           echo "]" >> updates.json

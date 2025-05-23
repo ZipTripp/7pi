@@ -25,7 +25,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
         rel="stylesheet">
 
-        
+
     <!-- google icon -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download" />
@@ -40,7 +40,7 @@
     <h1>D.EL.ED Preparation 2025</h1>
 
             <table id="updates-table" border="1" style="width: 100%;">
-  <tr><th>Update time:::</th><th>Description:::</th></tr>
+  <tr><th>Last Update on</th><th>Action</th></tr>
 </table>
 
 <script>
@@ -49,7 +49,8 @@ fetch('updates.json')
   .then(data => {
     const table = document.getElementById('updates-table');
     data.forEach(update => {
-      table.innerHTML += `<tr><td>${update.date}</td><td>${update.description}</td></tr>`;
+        const timeString = new Date(update.time * 1000).toLocaleTimeString();
+      table.innerHTML += `<tr><td>${update.date, timeString}</td><td>${update.description}</td></tr>`;
     });
   })
   .catch(err => console.error("Could not load updates:", err));
