@@ -13,10 +13,10 @@ function generateSubjectHTML(subjectCategory) {
 
     const topicsHTML = topics
       .filter(item => item && item.topic) // skip invalid topic entries
-      .map(({ topic, fileLink = "#", quizLink = "#", examLink = "#" }) => {
+      .map(({ topic, fileLink = "#", quizLink = "#", examLink = "#", isNew=false }) => {
         return `
           <div class="topic">
-            <p>${topic}</p>
+            <p>${topic} ${isNew ? `<span class="new-badge">New</span>`: ' '} </p>
             <div class="topic-links">
               <a href="${fileLink}" target="_blank" rel="noopener noreferrer">Notes/Questions</a>
               <a href="${quizLink}" target="_blank" rel="noopener noreferrer">Quiz</a>

@@ -109,8 +109,8 @@ export const container = {
         { topic: "7. Science+English Objectives Day 16_Abadat Sir ", fileLink:"https://drive.google.com/file/d/1vXZogUcl_KQELp7_LfG7ihkxknyet0aD/view?usp=drive_link", quizLink: "", examLink: "" },
         { topic: "8. Maths Reasoning day 4_#amitsir ", fileLink:"https://drive.google.com/file/d/1xeHdKaTI1gSBWnub0XVMH3Gm4kPDgsVN/view?usp=drive_link", quizLink: "", examLink: "" },
         { topic: "9. Math-Reasoning-Amitsir ", fileLink:"https://drive.google.com/file/d/1lcmhcMHqyeiML5MY6yi5WwMFE_jnpt_3/view?usp=drive_link", quizLink: "", examLink: "" },
-        { topic: "", fileLink:"", quizLink: "", examLink: "" },
-        { topic: "", fileLink:"", quizLink: "", examLink: "" },
+        { topic: "", fileLink:"", quizLink: "", examLink: "",isNew:true },
+        { topic: "", fileLink:"", quizLink: "", examLink: "",isNew:true },
         { topic: "", fileLink:"", quizLink: "", examLink: "" },
     ],
 
