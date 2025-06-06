@@ -27,10 +27,30 @@ h1{
     /* top: 40px; */
     margin: 8px;
 }
+.select-container{
+    display: inline-block;
+    margin: 0 auto;
+}
+label{
+    font-size: 18px;
+    padding: 8px;
+    font-weight: 500;
+    
+}
+.category{
+    padding: 8px;
+    border-radius: 4px;
+    width: 180px;
+    border: 2px solid black;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
 .subject-container{
     display:inline-block;
     text-align: left;
     padding: 0 5px 0 5px;
+    margin: 0 auto;
     border-radius: 9px;
     background-color: #ad88be;
     width: 330px;
