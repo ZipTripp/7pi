@@ -9,6 +9,7 @@ fetch("https://ziptripp.github.io/7pi_data/data.json")
 
 
 
+
 // old Format from previous app.js file
 const selectContainer = document.querySelector("select");
 const boxContainer = document.querySelector('.box');
