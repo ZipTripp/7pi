@@ -1,4 +1,4 @@
-fetch("https://github.com/ZipTripp/7pi_data/blob/3e78fa9bcbdc36ad5fddaec75629ed125390b4b9/data.json")
+fetch("https://ziptripp.github.io/7pi_data/data.json")
 .then(res => res.json())
 .then(data => {
     container = data;
