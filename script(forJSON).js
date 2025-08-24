@@ -31,7 +31,7 @@ function generateSubjectHTML(subjectCategory) {
             <div class="topic-links">
               <a href="${fileLink}" target="_blank" rel="noopener noreferrer">Notes/Questions</a>
               <a href="${quizLink}" target="_blank" rel="noopener noreferrer">Quiz</a>
-              <a href="${examLink}" target="_blank" rel="noopener noreferrer">---</a>
+              <a href="${examLink}" target="_blank" rel="noopener noreferrer">Video</a>
             </div>
           </div>
           <hr>
