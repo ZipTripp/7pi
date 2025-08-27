@@ -21,6 +21,11 @@ h1{
     font-style: normal;
   } */
 .box{
+/*New add-on start*/
+position: relative;
+overflow: hidden;
+/*New add-on end*/
+
     /* border: 2px solid black; */
     border-radius: 9px;
     /* position: relative; */
@@ -234,3 +239,14 @@ button:hover {
     font-family: "Poppins", sans-serif;
 }
 
+/* New add-on*/
+.box .subject-container {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.box .subject-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
